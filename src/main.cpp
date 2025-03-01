@@ -12,7 +12,7 @@ int main()
     double buttonB{0};      //B button value (need to connect this to input from controller) (possibly could be int)
     double deadZ{0.1};      //joystick deadzone
 
-    while(buttonB /= 1)
+    while(buttonB != 1)
     {
         if(rJoystickY > deadZ)          //if user pushes up on right joystick, increase frequency
         {
@@ -31,6 +31,8 @@ int main()
         {
             amp -= ampInv;
         }
+
+        std::cout << amp << " " << freq << std::endl;
     }
 
     return 0;
