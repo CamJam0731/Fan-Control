@@ -4,7 +4,6 @@
             "name": "Win32",
             "includePath": [
                 "${default}",
-                "C:/Program Files (x86)/Windows Kits/10/Include/10.0.26100.0/um",
                 "${workspaceFolder}/includes"
             ],
             "defines": [
