@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Xinput.h"
 
 int main()
 {

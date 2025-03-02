@@ -9,7 +9,7 @@ SRCDIRS	:= $(shell find . -name '*.$(SRCEXT)' -exec dirname {} \; | uniq)
 OBJS		:= $(patsubst %.$(SRCEXT),$(OBJDIR)/%.o,$(SRCS))
 
 DEBUG		  = -g
-INCLUDES  = -I./includes
+INCLUDES  = -I./includes -I/"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um" -I/"C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared"
 CFLAGS	  = -c $(DEBUG) $(INCLUDES)
 LDFLAGS		=
 
